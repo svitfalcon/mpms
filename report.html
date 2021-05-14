@@ -199,8 +199,9 @@
         
             if(bpmCount >=60 || bpmCount <=100){
                 status="Safe"
-                className= " "
+                className= "blink"
                 $("#condition").removeClass(className);
+                document.getElementById("condition").style.color = "green"
             }
             if(bpmCount <60 || bpmCount >100){
                 status = "Critical"
