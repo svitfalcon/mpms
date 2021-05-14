@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>MULTI PATIENT MONITORING SYSTEM</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="index.html" class="logo">
+					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>MPMS</span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+  
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
+                        </li>
+                        <li>
+                            <a href="add-patient.html"><i class="fa fa-plus"></i> <span>Add Patients</span></a>
+                        </li>
+                      
+                        <li >
+                            <a href="addSensor.html"><i class="fa fa-hand-o-down"></i> <span>Add New Sensors ID </span></a>
+                        </li>
+                     
+                        <li >
+                            <a href="searchReport.html"><i class="fa fa-file"></i> <span>Patient Report </span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-4">
+                        <div class="dash-widget">
+							<span class="dash-widget-bg1"><i class="fa fa-hand-o-down" aria-hidden="true"></i></span>
+							<div class="dash-widget-info text-right">
+								<h3 id="status">Loading .....</h3>
+								<span class="widget-title1">Status</span>
+							</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-4">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg4" style="background-color: red !important;"><i class="fa fa-heartbeat"  aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3 id="bpmCount">Loading .....</h3>
+                                <span class="widget-title4" style="background-color: red !important;" >Heart Beat </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-4">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg4" style="background-color: green;"><i class="fa fa-stethoscope" aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3 id="condition" >Loading .....</h3>
+                                <span class="widget-title4" style="background-color: green;" > Condition </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+ 
+		<div class="row">
+		<div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-8">
+    	 <div class="well profile">
+            <div class="col-sm-12">
+                <div class="col-xs-12 col-sm-8">
+                    <br>
+                    <h2 id="name">Name</h2>
+                    <p><strong>Phone: </strong><span id="phone"> Web Designer / UI.</span> </p>
+                    <p><strong>Email: </strong><span id="email"></span></p>
+                    <p><strong>DOB: </strong><span id="dob"></span>
+                        
+                    </p>
+                    <button class="btn btn-block" style="background-color: orange;"><span class=""></span>Download Report</button>
+                    
+                </div>    
+                         
+            
+            </div>            
+       
+            </div>
+    	 </div>    
+         <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-4">
+            <div class="well profile">
+               <div class="col-sm-12">
+                  
+          
+                    <img alt="" src="assets/img/user.jpg" style="border-radius: 100px;">
+             
+               
+               </div>            
+          
+               </div>
+            </div>              
+		</div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="chart-title">
+                            <h4>Patient Record</h4>
+                            <span class="float-right"><i class="fa fa-caret-up" aria-hidden="true"></i> 15% Higher BPM then Yesterday</span>
+                        </div>	
+                        <canvas id="linegraph"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="chart-title">
+                            <h4></h4>
+                            <div class="float-right">
+                              
+                            </div>
+                        </div>	
+                        <canvas id="bargraph"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+            </div>
+          
+        </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/Chart.bundle.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDgNDwCrxPBSe6PCBzHUMle4Hjk4O7XjFc",
+      authDomain: "multi-patient-monitoring-sys.firebaseapp.com",
+      databaseURL: "https://multi-patient-monitoring-sys-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "multi-patient-monitoring-sys",
+      storageBucket: "multi-patient-monitoring-sys.appspot.com",
+      messagingSenderId: "939816688997",
+      appId: "1:939816688997:web:1d88b9f41f107e8d7cd58c",
+      measurementId: "G-70RQK7WPSZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var dbRef= firebase.database().ref()   
+    dbRef.on('value',gotData,errData);
+    var k,keys;
+    function gotData(data) {
+    
+      let status="Loading..."
+      sc=data.val();
+      keys=Object.keys(sc);
+      var className = ""
+    //   document.getElementById("patientData").innerHTML=""
+        k=window.localStorage.getItem("userReportId")
+  
+        for( let i in sc[k] )
+        {
+        
+            if(sc[k].data != undefined){
+                let splitData = (sc[k].data).split(",")
+                var bpmCount = splitData[splitData.length-1]
+            }
+        
+            if(bpmCount >=60 || bpmCount <=100){
+                status="Safe"
+                className= " "
+                $("#condition").removeClass(className);
+            }
+            if(bpmCount <60 || bpmCount >100){
+                status = "Critical"
+                className = "blink"
+                $("#condition").addClass(className);
+            }
+            
+            if(i.includes("Data")){
+                document.getElementById("name").innerHTML = (sc[k][i].Fname + " "+sc[k][i].Lname).toUpperCase()
+                document.getElementById("phone").innerHTML = sc[k][i].Phone
+                document.getElementById("email").innerHTML = sc[k][i].Email
+                document.getElementById("dob").innerHTML = sc[k][i].Dob
+                
+            }
+               
+        }
+    
+        if(sc[k].status == "place your finger"){
+            document.getElementById("status").innerHTML="Sensor Disconnected"
+            
+        }else{
+            document.getElementById("status").innerHTML="Sensor Active"
+            document.getElementById("status").style.Color="greeen"
+        }
+        document.getElementById("bpmCount").innerHTML = bpmCount
+        document.getElementById("condition").innerHTML = status
+      
+     }
+     
+
+    function errData(err) {
+      console.log(err)
+    }
+    
+</script>
+
+</html>
