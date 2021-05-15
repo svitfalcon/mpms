@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Dashboard23:17-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>MULTI PATIENT MONITORING SYSTEM</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="index.html" class="logo">
+					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>MPMS</span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+            <!-- <ul class="nav user-menu float-right">
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fa fa-bell-o"></i> <span class="badge badge-pill bg-danger float-right">3</span></a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span>Notifications</span>
+                        </div>
+                        <div class="drop-scroll">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">
+												<img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+												<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">V</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
+												<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">L</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
+												<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">G</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
+												<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">V</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
+												<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><i class="fa fa-comment-o"></i> <span class="badge badge-pill bg-danger float-right">8</span></a>
+                </li>
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                        <span class="user-img"><img class="rounded-circle" src="assets/img/user.jpg" width="40" alt="Admin">
+							<span class="status online"></span></span>
+                        <span>Admin</span>
+                    </a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="profile.html">My Profile</a>
+						<a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+						<a class="dropdown-item" href="settings.html">Settings</a>
+						<a class="dropdown-item" href="login.html">Logout</a>
+					</div>
+                </li>
+            </ul> -->
+            <!-- <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                    <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </div> -->
+        </div>
+      \    <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+            <div id="sidebar-menu" class="sidebar-menu">
+                <ul>
+                    <li class="menu-title">Main</li>
+                    <li >
+                        
+                    </li>
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
+                    </li>
+                    <li>
+                        <a href="add-patient.html"><i class="fa fa-plus"></i> <span>Add Patients</span></a>
+                    </li>
+                    <li >
+                        <a href="addSensor.html"><i class="fa fa-hand-o-down"></i> <span>Add New Sensors ID </span></a>
+                    </li>
+
+                    <li >
+                        <a href="searchReport.html"><i class="fa fa-file"></i> <span>Patient Report </span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-sm-4 col-3">
+                        <h4 class="page-title">Dashboard</h4>
+                    </div>
+                    <div class="col-sm-8 col-9 text-right m-b-20">
+                        <a href="add-patient.html" class="btn btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Patient</a>
+                    </div>
+                </div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="table-responsive">
+							<table class="table table-border table-striped custom-table datatable mb-0">
+								<thead>
+									<tr>
+										<th>Name</th>
+                                        <th>Patient ID</th>
+										<th>DOB</th>
+										<th>Condition</th>
+										<th>Sensor Alloted</th>
+										<th>BPM</th>
+										<th >Health Report</th>
+									</tr>
+								</thead>
+								<tbody id="patientData">
+                                  
+								</tbody>
+							</table>
+						</div>
+					</div>
+                </div>
+            </div>
+     
+        </div>
+		<div id="delete_patient" class="modal fade delete-modal" role="dialog">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<img src="assets/img/sent.png" alt="" width="50" height="46">
+						<h3>Are you sure want to delete this Patient?</h3>
+						<div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+							<button type="submit" class="btn btn-danger">Delete</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDgNDwCrxPBSe6PCBzHUMle4Hjk4O7XjFc",
+    authDomain: "multi-patient-monitoring-sys.firebaseapp.com",
+    databaseURL: "https://multi-patient-monitoring-sys-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "multi-patient-monitoring-sys",
+    storageBucket: "multi-patient-monitoring-sys.appspot.com",
+    messagingSenderId: "939816688997",
+    appId: "1:939816688997:web:1d88b9f41f107e8d7cd58c",
+    measurementId: "G-70RQK7WPSZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var dbRef= firebase.database().ref()   
+  dbRef.on('value',gotData,errData);
+  var k,keys;
+  function gotData(data) {
+  
+    let status="Loading..."
+    sc=data.val();
+    keys=Object.keys(sc);
+    var className = ""
+    document.getElementById("patientData").innerHTML=""
+    for(var i=0;i<keys.length;i++){
+      
+        
+        k=keys[i];
+        
+     
+
+        for( let i in sc[k] )
+        {
+          
+            if(sc[k].data != undefined){
+                let splitData = (sc[k].data).split(",")
+                var bpmCount = splitData[splitData.length-1]
+            }
+       
+            if(bpmCount >=60 || bpmCount <=100){
+                status="Safe"
+                className= " "
+            }
+            if(bpmCount <60 || bpmCount >100){
+                status = "Critical"
+                className = "blink"
+            }
+            if(i.includes("Data")){
+                document.getElementById("patientData").innerHTML+=
+                `
+                    <tr>
+                        <td style="color:green" class="`+className+`"><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt="" >`+sc[k][i].Fname+" "+sc[k][i].Lname+`</td>
+                        <td>`+sc[k][i].sensorId+`</td>
+                        <td>`+sc[k][i].Dob+`</td>
+                        <td class = "`+className+`">`+status+`</td>
+                        <td>`+sc[k][i].sensorId+`</td>
+                        <td>`+bpmCount+`</td>
+                        <td >
+                            <!-- <div class="dropdown dropdown-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-index.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_patient"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                </div>
+                            </div> -->
+
+                            <a  class="btn btn btn-primary btn-rounded" style="color:white" id="`+k+`" onclick =openReport("`+k+`") ><i class="fa fa-file"></i>Check</a>
+                        </td>
+                    </tr>
+                `
+            }
+             
+        }
+       
+       
+    }
+  }
+  function openReport(id){
+
+      window.localStorage.setItem("userReportId",id)
+      
+      let reportID=(window.localStorage.getItem('userReportId'))
+      if(reportID != undefined){
+          window.location = "report.html"
+      }
+
+
+  }
+  function errData(err) {
+    console.log(err)
+  }
+
+</script>
+
+<!-- Dashboard23:19-->
+</html>
