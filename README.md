@@ -40,10 +40,10 @@ PROCESS FLOW:
 ![arduino ide](https://user-images.githubusercontent.com/84200921/118840024-a5e16b00-b8e4-11eb-9318-a2f69e9289f6.jpg)
 
 3.Install these llibraries in Arduino IDE
-  -ESPAsyncWebServer
-  -AsyncTCP
-  -WiFi
-  -FirebaseESP32
-  -Wire
-  -MAX30105
-  -heartRate
+  ESPAsyncWebServer,
+  AsyncTCP,
+  WiFi,
+  FirebaseESP32,
+  Wire,
+  MAX3010X,
+  heartRate.
