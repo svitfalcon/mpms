@@ -28,6 +28,11 @@ Install the library “max3010x pulse and proximity sensor library” in Arduino
 
 ![max30102](https://user-images.githubusercontent.com/84200921/118838294-2ef7a280-b8e3-11eb-897b-1051543e5bf0.jpg)
 
+SOFTWARE REQUIREMENTS:
+
+
+################################    HRITHIK ADD SOFTWARE STUFFS REQUIRED HERE    #################
+
 
 PROCESS FLOW:
 
@@ -47,3 +52,10 @@ PROCESS FLOW:
   Wire,
   MAX3010X,
   heartRate.
+
+4. Upload the code "Oximeter_firebase_ESP32.ino" to the ESP32 microcontroller.
+
+5. #############    HRITHIK ADD UR CONTENTS    ###########
+(SETTING UP GOOGLE FIREBASE AND WEB UI )
+
+
