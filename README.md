@@ -11,3 +11,13 @@ Hardware Components required
 ESP32 
 
 ESP32 is a powerful microcontroller with dual-core CPU and it can be clocked at80,160 or 240 MHz. It has built-in WIFI and Bluetooth and supports various communication protocols. It has also got ultra-low power co-processor, which is used for small tasks. ESP32 has got a memory of 512KB SRAM. ESP32 is a battery friendly. 
+
+![ESP32](https://user-images.githubusercontent.com/84200921/118837313-4da96980-b8e2-11eb-9057-1562bb8c4508.jpg)
+
+Max30102 
+
+MAX30102 is an integrated pulse oximeter and heart-rate monitor. It has Led's and photodiodes for measurements. Heartbeat and oxygen level can be monitored or measured and on placing the finger on the sensor, it notes down the readings. It supports I2C communication protocol.  
+
+LIBRARY REQUIRED: 
+
+Install the library “max3010x pulse and proximity sensor library” in Arduino IDE. This library supports both max30102 and max30105 modules. Here, we are using MAX30102 module. 
