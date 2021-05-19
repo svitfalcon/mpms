@@ -36,7 +36,7 @@ PROCESS FLOW:
 ![connection](https://user-images.githubusercontent.com/84200921/118839162-e8ef0e80-b8e3-11eb-8243-b370eb260e1d.jpg)
 
 2. Install Arduino IDE, which is an open-source software and is compatible with Mac, Linux and Windows OS. It is used to write the code and upload it onto the board (here ESP32). 
-3. 
+
 ![arduino ide](https://user-images.githubusercontent.com/84200921/118840024-a5e16b00-b8e4-11eb-9318-a2f69e9289f6.jpg)
 
 3.Install these llibraries in Arduino IDE
