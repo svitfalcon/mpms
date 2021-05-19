@@ -21,3 +21,22 @@ MAX30102 is an integrated pulse oximeter and heart-rate monitor. It has Led's an
 LIBRARY REQUIRED: 
 
 Install the library “max3010x pulse and proximity sensor library” in Arduino IDE. This library supports both max30102 and max30105 modules. Here, we are using MAX30102 module. 
+![max30102](https://user-images.githubusercontent.com/84200921/118838294-2ef7a280-b8e3-11eb-897b-1051543e5bf0.jpg)
+
+
+Process Flow 
+
+1.Make the connection as shown below
+![connection](https://user-images.githubusercontent.com/84200921/118839162-e8ef0e80-b8e3-11eb-8243-b370eb260e1d.jpg)
+
+2. Install Arduino IDE, which is an open-source software and is compatible with Mac, Linux and Windows OS. It is used to write the code and upload it onto the board (here ESP32). 
+![arduino ide](https://user-images.githubusercontent.com/84200921/118840024-a5e16b00-b8e4-11eb-9318-a2f69e9289f6.jpg)
+
+3.Install these llibraries in Arduino IDE
+-ESPAsyncWebServer
+-AsyncTCP
+-WiFi
+-FirebaseESP32
+-Wire
+-MAX30105
+-heartRate
