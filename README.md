@@ -62,9 +62,13 @@ PROCESS FLOW:
 5. Download and unzip the project from github.   
 
 6. Now setup a firebase account and add to the project using the following method :
+
    *Create a Firebase project https://firebase.google.com/docs/web/setup#create-firebase-project
+   
    *Register a web-app named 'mpms' with Firebase . https://firebase.google.com/docs/web/setup#register-app
+   
    *Setup Firebase realtime database.
+   
    *Initialize the firebase in all the html files using firebase cdn and then  add your web-aap configuration to all the html files.
    
 7.After the setup of firebase in the project ,run the index.html file for accessing the dashboard.
