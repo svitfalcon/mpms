@@ -30,8 +30,8 @@ Install the library “max3010x pulse and proximity sensor library” in Arduino
 
 SOFTWARE REQUIREMENTS:
 
-
-################################    HRITHIK ADD SOFTWARE STUFFS REQUIRED HERE    #################
+1.A Working system (Desktop or Mobile App) with any operating system built in.
+2.Any internet browsers such as Google Chrome,Apple Safari,Microsoft Internet Explorer and Edge,Mozilla Firefox etc can be used.
 
 
 PROCESS FLOW:
