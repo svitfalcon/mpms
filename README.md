@@ -34,6 +34,8 @@ SOFTWARE REQUIREMENTS:
 
 2.Any internet browsers such as Google Chrome,Apple Safari,Microsoft Internet Explorer and Edge,Mozilla Firefox etc can be used.
 
+3.IDE - Arduino IDE & VsCode/Sublime Text.
+
 
 
 PROCESS FLOW:
@@ -57,7 +59,17 @@ PROCESS FLOW:
 
 4. Upload the code "Oximeter_firebase_ESP32.ino" to the ESP32 microcontroller.
 
-5. #############    HRITHIK ADD UR CONTENTS    ###########
-(SETTING UP GOOGLE FIREBASE AND WEB UI )
+5. Download and unzip the project from github.   
+
+6. Now setup a firebase account and add to the project using the following method :
+   *Create a Firebase project https://firebase.google.com/docs/web/setup#create-firebase-project
+   *Register a web-app named 'mpms' with Firebase . https://firebase.google.com/docs/web/setup#register-app
+   *Setup Firebase realtime database.
+   *Initialize the firebase in all the html files using firebase cdn and then  add your web-aap configuration to all the html files.
+   
+7.After the setup of firebase in the project ,run the index.html file for accessing the dashboard.
+
+8.You can checkout the demo of the project here --> www.mpmslive.web.app
+   
 
 
