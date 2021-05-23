@@ -1,5 +1,6 @@
 MULTI PATIENT MONITORING SYSTEM  
-www.mpmslive.web.app
+
+https://mpmslive.web.app/index.html
 
 DESCRIPTION:
 
@@ -73,7 +74,7 @@ PROCESS FLOW:
    
 7.After the setup of firebase in the project ,run the index.html file for accessing the dashboard.
 
-8.You can checkout the demo of the project here --> www.mpmslive.web.app
+8.You can checkout the demo of the project here --> https://mpmslive.web.app/index.html
    
 
 DATA FLOW 
