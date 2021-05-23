@@ -81,7 +81,7 @@ DATA FLOW
 ![process flow diagram](https://user-images.githubusercontent.com/84200921/119262051-7a69c380-bbf7-11eb-9ff0-f1e26a6b6ece.jpeg)
 
 
-Here, we are using the microcontroller ESP32 for reading the data from the medical health support, which consists of all the sensors that can take physiological parameters from the patients with the help of IOT (Internet of Things) for the reading of data and make it more efficient to transfer data at higher speed with low cost. A ESP32 microcontroller is allotted for each patient. 
+Here, we are using the microcontroller ESP32 for reading the data from the medical health devices, which consists of all the sensors that can take physiological parameters from the patients. A ESP32 microcontroller is allotted for each patient. 
 
 This data will then be sent with the help of Wi-Fi to the router and then to the cloud which keeps updating because of the real time values to the monitoring room. With the help of web user interface, the data is organized, so that it is simple and user friendly. This Web UI is for the doctors, technicians, care takers and the nurse to monitor all the patients simultaneously. And if any abnormality is observed in the patient's data, then they can check on the patients. This is helpful in this pandemic situation where huge amount of people can be given importance and can be uniformly maintained and checked based on the reports they get in the cloud. 
 
