@@ -76,7 +76,7 @@ PROCESS FLOW:
 8.You can checkout the demo of the project here --> www.mpmslive.web.app
    
 
-PROCESS FLOW 
+DATA FLOW 
 
 ![process flow diagram](https://user-images.githubusercontent.com/84200921/119262051-7a69c380-bbf7-11eb-9ff0-f1e26a6b6ece.jpeg)
 
